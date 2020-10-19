@@ -1,39 +1,250 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./assets/style.css" />
 
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./assets/style.css" />
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="./assets/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
 </head>
 
 <body>
-    <div class="row">
-        <div class="col s12 m7">
-            <div class="card hoverable">
-                <div class="card-image">
-                    <img src="./assets/images/WorkDayScheduler.PNG" class="card-img-top" alt="...">
-                    <span class="card-title">Work Day Scheduler</span>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div>
-            </div>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid"
+        style="background-image: linear-gradient( rgba(255, 255, 255, 0.466) ,rgba(255, 255, 255, 0.657) ), url(./assets/images/Himalaya.jpg);">
+        <div class="container">
+            <h1 class="display-3">Hello, world!</h1>
+            <p>This is a template for a simple marketing or informational website. It includes a large callout
+                called a jumbotron and three supporting pieces of content. Use it as a starting point to create
+                something more unique.</p>
+            <p>
+                <a class="btn btn-lg btn-clear-light soft-transition" href="https://twitter.com/j_kula" role="button"
+                    target="_blank"><i class="fa fa-twitter"> Twitter</i></a>
+                <a class="btn btn-lg btn-clear-light soft-transition" href="https://github.com/jmkulakowski"
+                    role="button" target="_blank"><i class="fa fa-github-square"> Github</i></a>
+                <a class="btn btn-lg btn-clear-light soft-transition" href="https://www.linkedin.com/in/jkulakowski
+                      " role="button" target="_blank"><i class="fa fa-linkedin-square"> LinkedIn</i></a>
+            </p>
         </div>
     </div>
 
+    <div class="container" id=mainContent>
+        <div class="row text-center">
 
-    <script src="./assets/script.js"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+           
+            <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+               
+                <div class="view overlay rounded z-depth-1" id="scheduler">
+                    <a href="https://wcollins71.github.io/Work-Day-Scheduler/" target="_blank">
+                        <img src="./assets/images/WorkDayScheduler.gif" class="card-img-top"
+                            id="imageScheduleAnimated" alt="...">
+                        <img src="./assets/images/WorkDayScheduler.PNG" class="card-img-top"
+                            id="imageScheduleStatic" alt="...">
+                    </a>
+                    <a>
+                        <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                    </a>
+                </div>
+                
+                <div class="card-body pb-0">
+                    <h4 class="font-weight-bold my-3">Title of the news</h4>
+                    <p class="grey-text">A simple calendar application that allows the user to save events for each hour of
+                        the day.
+                        This app will run in the browser and feature dynamically updated HTML and CSS powered by
+                        jQuery.
+                    </p>
+                    <div class="card-action">
+                        <a class="btn btn-secondary" href="https://wcollins71.github.io/Work-Day-Scheduler/"
+                            target="_blank" role="button">Demo »</a>
+                        <a class="btn btn-secondary" href="https://github.com/wcollins71/Work-Day-Scheduler"
+                            target="_blank" role="button" style='float: right;'>GitHub »</a>
+                    </div>
+          
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+               
+                <div class="view overlay rounded z-depth-1" id="weather">
+                    <a href="https://wcollins71.github.io/Weather-Dashboard/" target="_blank">
+                        <img src="./assets/images/Weather.gif" class="card-img-top" id="imageWeatherAnimated"
+                        alt="...">
+                        <img src="./assets/images/Weather.PNG" class="card-img-top" id="imageWeatherStatic"
+                            alt="...">
+                    </a>
+                    <a>
+                        <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                    </a>
+                </div>
+                
+                <div class="card-body pb-0">
+                    <h4 class="font-weight-bold my-3">Wether Dashboard</h4>
+                    <p class="grey-text">An application that allows a user to search for the current wether for a city and the 5-day forecast.
+
+                    </p>
+                    <div class="card-action" >
+                        <a class="btn btn-secondary" href="https://wcollins71.github.io/Weather-Dashboard/"
+                            target="_blank" role="button">Demo »</a>
+                        <a class="btn btn-secondary" href="https://github.com/wcollins71/Weather-Dashboard"
+                            target="_blank" role="button" style='float: right;'>GitHub »</a>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+               
+                <div class="view overlay rounded z-depth-1" id="bookin">
+                    <img src="./assets/images/BookdIn.gif" class="card-img-top"
+                                    id="imageScheduleAnimated" alt="...">
+                    <a>
+                        <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                    </a>
+                </div>
+                
+                <div class="card-body pb-0">
+                    <h4 class="font-weight-bold my-3">Title of the news</h4>
+                    <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum
+                        necessitatibus saepe eveniet ut et voluptates repudiandae.
+                    </p>
+                    <div class="card-action">
+                        <a class="btn btn-secondary" href="https://wcollins71.github.io/Book-d-in/" target="_blank"
+                            role="button">Demo »</a>
+                        <a class="btn btn-secondary" href="https://github.com/wcollins71/Book-d-in" target="_blank"
+                            role="button" style='float: right;'>GitHub »</a>
+                    </div>
+                  
+                </div>
+            </div>
+           
+
+
+        <!-- </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card-wrapper">
+                    <div class="card hoverable">
+                        <div class="card-image " id="scheduler">
+                            <a href="https://wcollins71.github.io/Work-Day-Scheduler/" target="_blank">
+                                <img src="./assets/images/WorkDayScheduler.gif" class="card-img-top"
+                                    id="imageScheduleAnimated" alt="...">
+                                <img src="./assets/images/WorkDayScheduler.PNG" class="card-img-top"
+                                    id="imageScheduleStatic" alt="...">
+                            </a>
+                            <span class="card-title">Work Day Scheduler</span>
+                        </div>
+                        <div class="card-content">
+                            <p>A simple calendar application that allows the user to save events for each hour of
+                                the day.
+                                This app will run in the browser and feature dynamically updated HTML and CSS powered by
+                                jQuery.</p>
+                        </div>
+                        <div class="card-action">
+                            <a class="btn btn-secondary" href="https://wcollins71.github.io/Work-Day-Scheduler/"
+                                target="_blank" role="button">Demo »</a>
+                            <a class="btn btn-secondary" href="https://github.com/wcollins71/Work-Day-Scheduler"
+                                target="_blank" role="button" style='float: right;'>GitHub »</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-wrapper">
+                    <div class="card hoverable">
+                        <div class="card-image" id="weather">
+                            <a href="https://wcollins71.github.io/Weather-Dashboard/" target="_blank">
+                                <img src="./assets/images/BookdIn.gif" class="card-img-top" id="imageWeatherAnimated"
+                                alt="...">
+                                <img src="./assets/images/Weather.PNG" class="card-img-top" id="imageWeatherStatic"
+                                    alt="...">
+                            </a>
+                            <span class="card-title">Weather Dashboard</span>
+                        </div>
+                        <div class="card-content">
+                            <p>A simple calendar application that allows the user to save events for each hour of
+                                the day.
+                                This app will run in the browser and feature dynamically updated HTML and CSS powered by
+                                jQuery.</p>
+                        </div>
+                        <div class="card-action">
+                            <a class="btn btn-secondary" href="https://wcollins71.github.io/Weather-Dashboard/"
+                                target="_blank" role="button">Demo »</a>
+                            <a class="btn btn-secondary" href="https://github.com/wcollins71/Weather-Dashboard"
+                                target="_blank" role="button" style='float: right;'>GitHub »</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-wrapper">
+                    <div class="card hoverable">
+                        <div class="card-image" id="bookin">
+                            <a href="https://wcollins71.github.io/Book-d-in/" target="_blank">
+                                <img src="./assets/images/BookdIn.gif" class="card-img-top" id="imageBookdinAnimated"
+                                    alt="...">
+                                <img src="./assets/images/BookdIn.PNG" class="card-img-top" id="imageBookinStatic"
+                                    alt="...">
+                            </a>
+                            <span class="card-title">Book'd In</span>
+                        </div>
+                        <div class="card-content">
+                            <p>A simple calendar application that allows the user to save events for each hour of
+                                the day.
+                                This app will run in the browser and feature dynamically updated HTML and CSS powered by
+                                jQuery.</p>
+                        </div>
+                        <div class="card-action">
+                            <a class="btn btn-secondary" href="https://wcollins71.github.io/Book-d-in/" target="_blank"
+                                role="button">Demo »</a>
+                            <a class="btn btn-secondary" href="https://github.com/wcollins71/Book-d-in" target="_blank"
+                                role="button" style='float: right;'>GitHub »</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr> -->
+
+    </div>
+
+
+    <footer class="container">
+        <p>© Company 2017-2018</p>
+    </footer>
+    <script>
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+
 
 </body>
 
